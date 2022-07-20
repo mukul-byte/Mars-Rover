@@ -12,7 +12,7 @@ public class Rover {
         direction = roverDirection;
     }
 
-    public String moves(String roverMoves) {
+    public Rover moves(String roverMoves) {
         for (int idx = 0; idx < roverMoves.length(); idx++) {
             if (roverMoves.charAt(idx) == 'M') {
                 if (direction == "N") {
@@ -47,9 +47,11 @@ public class Rover {
             }
         }
 
-        return xCoordinate + " " + yCoordinate + " " + direction;
+        return new Rover(xCoordinate, yCoordinate, direction);
+    }
 
-//        return new Rover(xCoordinate,yCoordinate,direction);
+    public boolean equalsTo(Rover anotherRover) {
+        return ((xCoordinate == anotherRover.xCoordinate) && (yCoordinate == anotherRover.yCoordinate) && (direction == anotherRover.direction));
     }
 
 }

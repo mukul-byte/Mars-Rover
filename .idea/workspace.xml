@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43a7709-eb55-4b2f-82a4-0d264feda227" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/MarsLand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/MarsLand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/navi/MarsRover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +62,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarsRoverTests.expectTrue_5_1_E">
+  <component name="RunManager" selected="JUnit.MarsRoverTests">
+    <configuration name="MarsRover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.navi.MarsRover" />
+      <module name="Mars Rover" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.navi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MarsRoverTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,41 +85,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.expectTrue_0_0_N" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.Input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="expectTrue_0_0_N" />
+      <option name="METHOD_NAME" value="Input" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.expectTrue_1_2_N" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="expectTrue_1_2_N" />
+      <option name="METHOD_NAME" value="expectTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.expectTrue_1_3_N" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="expectTrue_1_3_N" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MarsRoverTests.expectTrue_5_1_E" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mars Rover" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="expectTrue_5_1_E" />
+      <option name="METHOD_NAME" value="expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue_5_1_E" />
         <item itemvalue="JUnit.MarsRoverTests" />
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_3_N" />
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_2_N" />
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue_0_0_N" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue" />
+        <item itemvalue="Application.MarsRover" />
+        <item itemvalue="JUnit.MarsRoverTests.Input" />
       </list>
     </recent_temporary>
   </component>
