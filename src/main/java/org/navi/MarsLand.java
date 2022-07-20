@@ -1,10 +1,10 @@
 package org.navi;
 
 public class MarsLand {
-    int maxX;
-    int maxY;
+    private final int maxX;
+    private final int maxY;
 
-    MarsLand(int maxX, int maxY){
+    public MarsLand(int maxX, int maxY){
         this.maxX = maxX;
         this.maxY = maxY;
     }

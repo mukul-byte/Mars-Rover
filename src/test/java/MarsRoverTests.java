@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.Test;
+import org.navi.MarsLand;
 import org.navi.Rover;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MarsRoverTests {
 
@@ -12,35 +14,25 @@ public class MarsRoverTests {
 
     @Test
     void expectTrue_1_2_N(){
-        //1 2 N
-        int roverXCoordinate = 1;
-        int roverYCoordinate = 2;
-        String roverDirection = "N";
-        String roverMoves = "L";
-        Rover rover = new Rover(roverXCoordinate, roverYCoordinate, roverDirection);
-        assertEquals("1 2 W",rover.moves(roverMoves));
+        Rover rover = new Rover(1, 2, "N");
+        assertEquals("1 2 W",rover.moves("L"));
     }
 
     @Test
     void expectTrue_1_3_N(){
-        //1 2 N
-        int roverXCoordinate = 1;
-        int roverYCoordinate = 2;
-        String roverDirection = "N";
-        String roverMoves = "LMLMLMLMM";
-        Rover rover = new Rover(roverXCoordinate, roverYCoordinate, roverDirection);
-        assertEquals("1 3 N",rover.moves(roverMoves));
+        Rover rover = new Rover(1, 2, "N");
+        assertEquals("1 3 N",rover.moves("LMLMLMLMM"));
     }
-
 
     @Test
     void expectTrue_5_1_E(){
-        //1 2 N
-        int roverXCoordinate = 3;
-        int roverYCoordinate = 3;
-        String roverDirection = "E";
-        String roverMoves = "MMRMMRMRRM";
-        Rover rover = new Rover(roverXCoordinate, roverYCoordinate, roverDirection);
-        assertEquals("5 1 E",rover.moves(roverMoves));
+        Rover rover = new Rover(3, 3, "E");
+        assertEquals("5 1 E",rover.moves("MMRMMRMRRM"));
     }
+
+    @Test
+    void expectTrue_MarsLand_setup(){
+        assertNotEquals(null, new MarsLand(5,5));
+    }
+
 }
