@@ -21,5 +21,16 @@ public class MarsRoverTests {
         assertEquals("1 2 W",rover.moves(roverMoves));
     }
 
+    @Test
+    void expectTrue_1_3_N(){
+        //1 2 N
+        int roverXCoordinate = 1;
+        int roverYCoordinate = 2;
+        String roverDirection = "N";
+        String roverMoves = "LMLMLMLMM";
+        Rover rover = new Rover(roverXCoordinate, roverYCoordinate, roverDirection);
+        assertEquals("1 3 N",rover.moves(roverMoves));
+    }
+
 
 }
