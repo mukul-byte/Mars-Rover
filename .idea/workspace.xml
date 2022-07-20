@@ -59,7 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarsRoverTests.expectTrue_1_3_N">
+  <component name="RunManager" selected="JUnit.MarsRoverTests.expectTrue_5_1_E">
     <configuration name="MarsRoverTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
@@ -99,11 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.setup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue_5_1_E" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="setup" />
+      <option name="METHOD_NAME" value="expectTrue_5_1_E" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_3_N" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_5_1_E" />
         <item itemvalue="JUnit.MarsRoverTests" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_3_N" />
         <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_2_N" />
         <item itemvalue="JUnit.MarsRoverTests.expectTrue_0_0_N" />
-        <item itemvalue="JUnit.MarsRoverTests.setup" />
       </list>
     </recent_temporary>
   </component>

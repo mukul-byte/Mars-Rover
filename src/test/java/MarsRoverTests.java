@@ -33,4 +33,14 @@ public class MarsRoverTests {
     }
 
 
+    @Test
+    void expectTrue_5_1_E(){
+        //1 2 N
+        int roverXCoordinate = 3;
+        int roverYCoordinate = 3;
+        String roverDirection = "E";
+        String roverMoves = "MMRMMRMRRM";
+        Rover rover = new Rover(roverXCoordinate, roverYCoordinate, roverDirection);
+        assertEquals("5 1 E",rover.moves(roverMoves));
+    }
 }
