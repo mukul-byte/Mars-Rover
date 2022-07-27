@@ -5,6 +5,40 @@ public class Rover {
     private int yCoordinate;
     private String direction;
 
+    private void moveStraight(){
+        if (direction == "N") {
+            yCoordinate++;
+        } else if (direction == "S") {
+            yCoordinate--;
+        } else if (direction == "W") {
+            xCoordinate--;
+        } else {
+            xCoordinate++;
+        }
+    }
+    private void moveRight(){
+        if (direction == "N") {
+            direction = "E";
+        } else if (direction == "W") {
+            direction = "N";
+        } else if (direction == "S") {
+            direction = "W";
+        } else {
+            direction = "S";
+        }
+    }
+
+    public void moveLeft() {
+        if (direction == "N") {
+            direction = "W";
+        } else if (direction == "W") {
+            direction = "S";
+        } else if (direction == "S") {
+            direction = "E";
+        } else {
+            direction = "N";
+        }
+    }
 
     public Rover(int roverXCoordinate, int roverYCoordinate, String roverDirection) {
         xCoordinate = roverXCoordinate;
@@ -15,35 +49,11 @@ public class Rover {
     public Rover moves(String roverMoves) {
         for (int idx = 0; idx < roverMoves.length(); idx++) {
             if (roverMoves.charAt(idx) == 'M') {
-                if (direction == "N") {
-                    yCoordinate++;
-                } else if (direction == "S") {
-                    yCoordinate--;
-                } else if (direction == "W") {
-                    xCoordinate--;
-                } else {
-                    xCoordinate++;
-                }
+                moveStraight();
             } else if (roverMoves.charAt(idx) == 'L') {
-                if (direction == "N") {
-                    direction = "W";
-                } else if (direction == "W") {
-                    direction = "S";
-                } else if (direction == "S") {
-                    direction = "E";
-                } else {
-                    direction = "N";
-                }
+                moveLeft();
             } else {
-                if (direction == "N") {
-                    direction = "E";
-                } else if (direction == "W") {
-                    direction = "N";
-                } else if (direction == "S") {
-                    direction = "W";
-                } else {
-                    direction = "S";
-                }
+                moveRight();
             }
         }
 
