@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Rover {
     private Coordinates coordinates;
     private String direction;
-
+    private String navigationMoves;
     public Rover(Coordinates coordinates, String direction) {
         this.coordinates = coordinates;
         this.direction = direction;
@@ -36,7 +36,6 @@ public class Rover {
             changeDirectionTo("S");
         }
     }
-
     public void moveLeft() {
         if (direction == "N") {
             changeDirectionTo("W");
@@ -54,6 +53,12 @@ public class Rover {
         direction = roverDirection;
     }
 
+    public Rover(Coordinates coordinates, String direction, String navigationMoves) {
+        this.coordinates = coordinates;
+        this.direction = direction;
+        this.navigationMoves = navigationMoves;
+    }
+
     public Rover moves(String roverMoves) {
         for (int idx = 0; idx < roverMoves.length(); idx++) {
             if (roverMoves.charAt(idx) == 'M') {
@@ -64,7 +69,11 @@ public class Rover {
                 moveRight();
             }
         }
+        return new Rover(this.coordinates, direction);
+    }
 
+    public Rover moves() {
+        moves(this.navigationMoves);
         return new Rover(this.coordinates, direction);
     }
 

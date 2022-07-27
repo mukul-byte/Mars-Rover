@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43a7709-eb55-4b2f-82a4-0d264feda227" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/navi/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/navi/Universe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UniverseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/mukulgoyal/Desktop/Mars-Rover",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mukulgoyal/Desktop/Mars-Rover&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.navi" />
@@ -81,16 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.expectTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mars Rover" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="expectTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars-Rover" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,13 +101,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UniverseTest.expectTrueWithInitPos_0_0_N_Move_M_FinalPos_0_1_N_LimitCoor_2_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mars-Rover" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UniverseTest" />
+      <option name="METHOD_NAME" value="expectTrueWithInitPos_0_0_N_Move_M_FinalPos_0_1_N_LimitCoor_2_2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MarsRoverTests (1)" />
+        <item itemvalue="JUnit.UniverseTest.expectTrueWithInitPos_0_0_N_Move_M_FinalPos_0_1_N_LimitCoor_2_2" />
         <item itemvalue="JUnit.MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E (1)" />
         <item itemvalue="JUnit.MarsRoverTests" />
         <item itemvalue="JUnit.MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" />
-        <item itemvalue="JUnit.MarsRoverTests.expectTrue" />
       </list>
     </recent_temporary>
   </component>
