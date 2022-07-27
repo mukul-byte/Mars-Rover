@@ -11,22 +11,18 @@ public class Coordinates {
         this.yCoordinate = yCoordinate;
     }
 
-    public void incrementYcoordinate() {
-        yCoordinate++;
+    public Coordinates incrementYcoordinate() {
+        return new Coordinates(xCoordinate,yCoordinate+1);
     }
-
-    public void decrementXcoordinate() {
-        xCoordinate--;
+    public Coordinates decrementYcoordinate() {
+        return new Coordinates(xCoordinate,yCoordinate-1);
     }
-
-    public void decrementYcoordinate() {
-        yCoordinate--;
+    public Coordinates incrementXcoordinate() {
+        return new Coordinates(xCoordinate+1,yCoordinate);
     }
-
-    public void incrementXcoordinate() {
-        xCoordinate++;
+    public Coordinates decrementXcoordinate() {
+        return new Coordinates(xCoordinate-1,yCoordinate);
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -47,5 +43,11 @@ public class Coordinates {
                 "xCoordinate=" + xCoordinate +
                 ", yCoordinate=" + yCoordinate +
                 '}';
+    }
+
+    public boolean isWithIn(Coordinates limitingCoordinates) {
+        boolean areCoordinatesositive = limitingCoordinates.xCoordinate>=0 && limitingCoordinates.yCoordinate>=0;
+
+        return areCoordinatesositive && (this.xCoordinate<= limitingCoordinates.xCoordinate) && (this.yCoordinate <= limitingCoordinates.yCoordinate);
     }
 }

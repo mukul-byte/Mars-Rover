@@ -16,7 +16,7 @@ public class MarsRover {
         String roverMoves = sc.nextLine();
         Rover rover = new Rover(roverXCoordinate, roverXCoordinate, roverDirection);
 
-        System.out.println(rover.moves(roverMoves));
+//        System.out.println(rover.moves(roverMoves));
 
     }
 }

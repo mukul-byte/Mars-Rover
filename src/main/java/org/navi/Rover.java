@@ -14,15 +14,20 @@ public class Rover {
     void changeDirectionTo(String direction){
         this.direction = direction;
     }
-    private void moveStraight(){
+    private void moveStraight(Coordinates limitingCoordinates){
+        Coordinates expectedCoordinates;
         if (direction == "N") {
-            coordinates.incrementYcoordinate();
+            expectedCoordinates = coordinates.incrementYcoordinate();
         } else if (direction == "S") {
-            coordinates.decrementYcoordinate();;
+            expectedCoordinates = coordinates.decrementYcoordinate();;
         } else if (direction == "W") {
-            coordinates.decrementXcoordinate();
+            expectedCoordinates = coordinates.decrementXcoordinate();
         } else {
-            coordinates.incrementXcoordinate();
+            expectedCoordinates = coordinates.incrementXcoordinate();
+        }
+
+        if(expectedCoordinates.isWithIn(limitingCoordinates)){
+            this.coordinates = expectedCoordinates;
         }
     }
     private void moveRight(){
@@ -59,22 +64,27 @@ public class Rover {
         this.navigationMoves = navigationMoves;
     }
 
-    public Rover moves(String roverMoves) {
+    public void moves(String roverMoves) {
+        moves(roverMoves, new Coordinates(Integer.MAX_VALUE,Integer.MAX_VALUE));
+    }
+    public void moves(String roverMoves, Coordinates limitingCoordinates) {
         for (int idx = 0; idx < roverMoves.length(); idx++) {
             if (roverMoves.charAt(idx) == 'M') {
-                moveStraight();
+                moveStraight(limitingCoordinates);
             } else if (roverMoves.charAt(idx) == 'L') {
                 moveLeft();
             } else {
                 moveRight();
             }
         }
-        return new Rover(this.coordinates, direction);
+    }
+    public void moves(int moveIdx, Coordinates limitingCoordinates) {
+        String roverMoves = String.valueOf(this.navigationMoves.charAt(moveIdx));
+        moves(roverMoves, limitingCoordinates);
     }
 
-    public Rover moves() {
+    public void moves() {
         moves(this.navigationMoves);
-        return new Rover(this.coordinates, direction);
     }
 
     @Override
