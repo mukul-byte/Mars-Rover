@@ -1,48 +1,56 @@
 package org.navi;
 
+import java.util.Objects;
+
 public class Rover {
-    private int xCoordinate;
-    private int yCoordinate;
+    private Coordinates coordinates;
     private String direction;
 
+    public Rover(Coordinates coordinates, String direction) {
+        this.coordinates = coordinates;
+        this.direction = direction;
+    }
+
+    void changeDirectionTo(String direction){
+        this.direction = direction;
+    }
     private void moveStraight(){
         if (direction == "N") {
-            yCoordinate++;
+            coordinates.incrementYcoordinate();
         } else if (direction == "S") {
-            yCoordinate--;
+            coordinates.decrementYcoordinate();;
         } else if (direction == "W") {
-            xCoordinate--;
+            coordinates.decrementXcoordinate();
         } else {
-            xCoordinate++;
+            coordinates.incrementXcoordinate();
         }
     }
     private void moveRight(){
         if (direction == "N") {
-            direction = "E";
+            changeDirectionTo("E");
         } else if (direction == "W") {
-            direction = "N";
+            changeDirectionTo("N");
         } else if (direction == "S") {
-            direction = "W";
+            changeDirectionTo("W");
         } else {
-            direction = "S";
+            changeDirectionTo("S");
         }
     }
 
     public void moveLeft() {
         if (direction == "N") {
-            direction = "W";
+            changeDirectionTo("W");
         } else if (direction == "W") {
-            direction = "S";
+            changeDirectionTo("S");
         } else if (direction == "S") {
-            direction = "E";
+            changeDirectionTo("E");
         } else {
-            direction = "N";
+            changeDirectionTo("N");
         }
     }
 
     public Rover(int roverXCoordinate, int roverYCoordinate, String roverDirection) {
-        xCoordinate = roverXCoordinate;
-        yCoordinate = roverYCoordinate;
+        coordinates = new Coordinates(roverXCoordinate,roverYCoordinate);
         direction = roverDirection;
     }
 
@@ -57,11 +65,27 @@ public class Rover {
             }
         }
 
-        return new Rover(xCoordinate, yCoordinate, direction);
+        return new Rover(this.coordinates, direction);
     }
 
-    public boolean equalsTo(Rover anotherRover) {
-        return ((xCoordinate == anotherRover.xCoordinate) && (yCoordinate == anotherRover.yCoordinate) && (direction == anotherRover.direction));
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rover rover = (Rover) o;
+        return (direction == rover.direction) && Objects.equals(coordinates, rover.coordinates);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Rover{" +
+                "direction='" + direction + '\'' +
+                ", coordinates=" + coordinates +
+                '}';
+    }
 }
