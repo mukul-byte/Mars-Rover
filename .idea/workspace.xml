@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43a7709-eb55-4b2f-82a4-0d264feda227" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/navi/MovementSymbols.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/MarsRover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/navi/Universe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/navi/Universe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UniverseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UniverseTest.java" afterDir="false" />
     </list>
@@ -22,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -65,8 +63,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UniverseTest">
-    <configuration name="MarsRoverTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MarsRoverTests">
+    <configuration name="MarsRoverTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars-Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
@@ -75,30 +73,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTests.setup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue_1_2_N_LMLMLMLMM_To_1_3_N" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars-Rover" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
-      <option name="METHOD_NAME" value="setup" />
+      <option name="METHOD_NAME" value="expectTrue_1_2_N_LMLMLMLMM_To_1_3_N" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue_1_2_N_L_To_1_2_W" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars-Rover" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UniverseTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
+      <option name="METHOD_NAME" value="expectTrue_1_2_N_L_To_1_2_W" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniverseTest.expectTrueWithInitPos_0_0_N_Move_MMM_FinalPos_0_2_N_LimitCoor_2_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mars-Rover" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UniverseTest" />
-      <option name="METHOD_NAME" value="expectTrueWithInitPos_0_0_N_Move_MMM_FinalPos_0_2_N_LimitCoor_2_2" />
+      <option name="MAIN_CLASS_NAME" value="MarsRoverTests" />
+      <option name="METHOD_NAME" value="expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UniverseTest" />
+        <item itemvalue="JUnit.MarsRoverTests" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_3_3_E_MMRMMRMRRM_To_5_1_E" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_2_N_LMLMLMLMM_To_1_3_N" />
+        <item itemvalue="JUnit.MarsRoverTests.expectTrue_1_2_N_L_To_1_2_W" />
         <item itemvalue="JUnit.UniverseTest.expectTrueWithInitPos_0_0_N_Move_M_FinalPos_0_1_N_LimitCoor_2_2" />
-        <item itemvalue="JUnit.MarsRoverTests (1)" />
-        <item itemvalue="JUnit.MarsRoverTests.setup" />
-        <item itemvalue="JUnit.UniverseTest.expectTrueWithInitPos_0_0_N_Move_MMM_FinalPos_0_2_N_LimitCoor_2_2" />
       </list>
     </recent_temporary>
   </component>

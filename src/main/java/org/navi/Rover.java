@@ -69,9 +69,9 @@ public class Rover {
     }
     public void moves(String roverMoves, Coordinates limitingCoordinates) {
         for (int idx = 0; idx < roverMoves.length(); idx++) {
-            if (roverMoves.charAt(idx) == 'M') {
+            if (roverMoves.charAt(idx) == '^') {
                 moveStraight(limitingCoordinates);
-            } else if (roverMoves.charAt(idx) == 'L') {
+            } else if (roverMoves.charAt(idx) == '<') {
                 moveLeft();
             } else {
                 moveRight();
